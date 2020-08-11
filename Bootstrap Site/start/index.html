@@ -39,7 +39,7 @@
         <h1 class="display-2">Full Stack Conf</h1>
         <p class="lead">A One-day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-          <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
           <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
         </div>
       </div>
@@ -79,7 +79,7 @@
       </div><!-- /about -->
 
       <!-- speakers -->
-      <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
+      <h1 id="speakers" class="display-4 text-center my-5 text-info">Speakers</h1>
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <div class="card mb-3">
@@ -149,6 +149,7 @@
       </div><!-- /speakers -->
 
       <!-- schedule -->
+      <h1 id="schedule" class="display-4 text-center my-5 text-info">Schedule</h1>
       <ul class="list-group">
         <li class="list-group-item">
           <div class="d-flex justify-content-between">
@@ -202,7 +203,7 @@
       </ul><!-- /schedule -->
 
       <!-- callout button -->
-      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register
         Now</button>
 
       <!-- signup form -->
@@ -256,8 +257,30 @@
           <small>&copy; 2017 Full Stack Conf &amp; Treehouse</small>
         </div>
       </div><!-- /footer -->
+      </div><!-- /.container -->
 
-    </div><!-- /.container -->
+      <!--=====================================
+                    FORM MODAL
+    =====================================-->
+      <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Form goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
