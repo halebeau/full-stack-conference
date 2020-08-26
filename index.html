@@ -17,7 +17,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand order-1 mr-0" href="https://www.teamtreehouse.com" target="_blank">Presented by HaleCoding</a>
+        <a class="navbar-brand order-1 mr-0" href="https://www.teamtreehouse.com" target="_blank">Presented by
+          HaleCoding</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,7 +40,8 @@
         <h1 class="display-2">Full Stack Conf</h1>
         <p class="lead">A One-day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register
+            Now</button>
           <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
         </div>
       </div>
@@ -152,6 +154,8 @@
       <h1 id="schedule" class="display-4 text-center my-5 text-info">Schedule</h1>
       <ul class="list-group">
         <li class="list-group-item">
+          <img src="speaker-thumbnails/avatar-nodestradamus.png" class="mr-3 rounded-circle" alt="nodestradamus thumbnail">
+          <div class="media-body">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Keynote: Internet of Things</h5>
             <span class="badge badge-pill badge-info p-2">9:00am</span>
@@ -203,7 +207,8 @@
       </ul><!-- /schedule -->
 
       <!-- callout button -->
-      <button type="button" class="btn btn-outline-warning btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register
+      <button type="button" class="btn btn-outline-warning btn-lg d-block mx-auto my-5" data-toggle="modal"
+        data-target="#register">Don't Miss Out, Register
         Now</button>
 
       <!-- signup form -->
@@ -223,6 +228,16 @@
             </span>
           </div>
         </div>
+
+        <!-- <div class="btn_wrap">
+          <span>Share</span>
+          <div class="container">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+          </div>
+        </div> -->
       </div>
       <hr><!-- /signup form -->
 
@@ -257,150 +272,160 @@
           <small>&copy; 2017 Full Stack Conf &amp; Treehouse</small>
         </div>
       </div><!-- /footer -->
-      </div><!-- /.container -->
+    </div><!-- /.container -->
 
-      <!--=====================================
+    <!--=====================================
                     FORM MODAL
     =====================================-->
-      <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-              <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <!-- registration form -->
-              <form class="needs-validation" novalidate>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Hurry!</strong> Early bird registration ends in 2 days
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <h5 class="mb-4">Basic Info</h5>
-                <div class="form-group">
-                  <label class="form-control-label" for="validationCustom01">Name:</label>
-                  <input type="text" class="form-control" id="validationCustom01" required>
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- registration form -->
+            <form class="needs-validation" novalidate>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Hurry!</strong> Early bird registration ends in 2 days
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <h5 class="mb-4">Basic Info</h5>
+              <div class="form-group">
+                <label class="form-control-label" for="validationCustom01">Name:</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
                 <div class="invalid-feedback">
-                    Please provide a valid name.
+                  Please enter a name
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label" for="validationCustom02">Email:</label>
+                <input type="email" class="form-control" id="validationCustom02" required>
+                <div class="invalid-feedback">
+                  Please enter a email
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="form-control" id="role">
+                  <option value="full stack js developer">Full Stack Developer</option>
+                  <option value="front end developer">Front End Developer</option>
+                  <option value="back end developer">Back End Developer</option>
+                  <option value="designer">Designer</option>
+                  <option value="student">Student</option>
+                </select>
+              </div>
+
+              <hr class="my-4">
+              <h5 class="mb-4">Which Topic Interests You Most?</h5>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Frameworks</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">JavaScript Libraries</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Node.js</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Build Tools</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">ES2015</span>
+                </label>
+              </div>
+
+              <hr class="mb-4">
+              <h5 class="mb-4">Payment Info</h5>
+
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <label for="cc-num" for="validationCustom03">Card Number:</label>
+                  <input class="form-control" id="cc-num" type="text" for="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please enter a CC Number
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="form-control-label" for="validationCustom02">Email:</label>
-                  <input type="email" class="form-control" id="validationCustom02" required>
-                <div class="invalid-feedback">
-                    Please provide a valid email.
-                </div>
-                </div>
-                <div class="form-group">
-                  <label for="role">Job Role:</label>
-                  <select class="form-control" id="role">
-                    <option value="full stack js developer">Full Stack Developer</option>
-                    <option value="front end developer">Front End Developer</option>
-                    <option value="back end developer">Back End Developer</option>
-                    <option value="designer">Designer</option>
-                    <option value="student">Student</option>
-                  </select>
+
+                <div class="col-lg form-group">
+                  <label for="zip" for="validationCustom04">Zip Code:</label>
+                  <input class="form-control" id="zip" type="text" for="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please enter a Zip
+                  </div>
                 </div>
 
-                <hr class="my-4">
-                <h5 class="mb-4">Which Topic Interests You Most?</h5>
-
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">JavaScript Frameworks</span>
-                  </label>
+                <div class="col-lg form-group">
+                  <label for="cvv" for="validationCustom05">CVV:</label>
+                  <input class="form-control" id="cvv" type="text" for="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please enter a CVV
+                  </div>
                 </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">JavaScript Libraries</span>
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Node.js</span>
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Build Tools</span>
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">ES2015</span>
-                  </label>
-                </div>
-
-                <hr class="mb-4">
-                <h5 class="mb-4">Payment Info</h5>
 
                 <div class="form-row">
-                    <div class="col-lg-6 form-group">
-                      <label for="cc-num">Card Number:</label>
-                      <input class="form-control" id="cc-num" type="text">
-                    </div>
-                  
-                    <div class="col-lg form-group">
-                      <label for="zip">Zip Code:</label>
-                      <input class="form-control" id="zip" type="text">
-                    </div>
-                  
-                    <div class="col-lg form-group">
-                      <label for="cvv">CVV:</label>
-                      <input class="form-control" id="cvv" type="text">
-                    </div>
+                  <label class="col-lg-12">Expiration Date:</label>
 
-                    <div class="form-row">
-                      <label class="col-lg-12">Expiration Date:</label>
-                      
-                      <div class="form-group col-lg-8">
-                          <select class="custom-select form-control" id="exp-month">
-                              <option value="1">1 - January</option>
-                              <option value="2">2 - February</option>
-                              <option value="3">3 - March</option>
-                              <option value="4">4 - April</option>
-                              <option value="5">5 - May</option>
-                              <option value="6">6 - June</option>
-                              <option value="7">7 - July</option>
-                              <option value="8">8 - August</option>
-                              <option value="9">9 - September</option>
-                              <option value="10">10 - October</option>
-                              <option value="11">11 - November</option> 
-                              <option value="12">12 - December</option>
-                            </select> 
-                      </div>
-                      <div class="form-group col-lg">
-                          <select class="custom-select form-control" id="exp-year">
-                              <option value="2016">2016</option>
-                              <option value="2017">2017</option>
-                              <option value="2018">2018</option>
-                              <option value="2019">2019</option>
-                              <option value="2020">2020</option>
-                            </select> 
-                      </div>
-                    </div>
-                    <hr class="mb-4">
+                  <div class="form-group col-lg-8">
+                    <select class="custom-select form-control" id="exp-month">
+                      <option value="1">1 - January</option>
+                      <option value="2">2 - February</option>
+                      <option value="3">3 - March</option>
+                      <option value="4">4 - April</option>
+                      <option value="5">5 - May</option>
+                      <option value="6">6 - June</option>
+                      <option value="7">7 - July</option>
+                      <option value="8">8 - August</option>
+                      <option value="9">9 - September</option>
+                      <option value="10">10 - October</option>
+                      <option value="11">11 - November</option>
+                      <option value="12">12 - December</option>
+                    </select>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-lg mx-auto d-block">Register</button>
-              </form><!-- /register form -->
-            </div>
+                  <div class="form-group col-lg">
+                    <select class="custom-select form-control" id="exp-year">
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="mb-4">
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg mx-auto d-block">Register</button>
+            </form><!-- /register form -->
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -415,25 +440,25 @@
       crossorigin="anonymous"></script>
 
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if(form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
     </script>
   </body>
 

@@ -8,3 +8,11 @@
     background-image: url('../img/jumbo-bg.jpg');
     background-size: cover;
 }
+
+.form-control:not(input[required]) {
+    
+}
+
+.align-self-center mr-3 {
+    
+}
