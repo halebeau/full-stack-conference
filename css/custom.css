@@ -16,3 +16,25 @@
 .align-self-center mr-3 {
     
 }
+
+/* What You'll Learn Section */
+
+.mongo {
+    color: #002699;
+}
+.express {
+    color: #3366ff;
+}
+.react {
+    color: #b3c6ff;
+}
+.node {
+    color: #006666;
+}
+.es {
+    color: #00cccc;
+}
+.babel {
+    color: #66ffff;
+}
+
