@@ -38,10 +38,13 @@
     color: #66ffff;
 }
 
+
+/* SHARE BUTTON  */
+
 i {
     opacity: 0;
     font-size: 28px;
-    color: red;
+    color: #017cff;
     will-change: transform;
     transform: scale(.1);
     transition: all .3s ease;
@@ -74,7 +77,7 @@ i {
     line-height: 70px;
     letter-spacing: 2px;
     color: #eeeeed;
-    background-color: #1f1e1e;
+    background-color: #017cff;
     padding: 0 18px;
     transition: all 1.2s ease;
 }
