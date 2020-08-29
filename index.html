@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
       integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/all.css">
   </head>
 
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -259,7 +260,7 @@
         Now</button>
 
       <!-- signup form -->
-      <hr>
+      <hr class="bg-info">
       <div class="row py-4 text-muted">
         <div class="col-md col-xl-5">
           <p><strong>About Treehouse</strong></p>
@@ -276,17 +277,17 @@
           </div>
         </div>
 
-        <!-- <div class="btn_wrap">
-          <span>Share</span>
-          <div class="container">
+        <div class="btn_wrap">
+          <span class="share">Share</span>
+          <div class="social">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-github"></i>
           </div>
-        </div> -->
+        </div>
       </div>
-      <hr><!-- /signup form -->
+      <hr class="bg-info"><!-- /signup form -->
 
       <!-- footer -->
       <div class="row py-3">
@@ -361,6 +362,7 @@
               <div class="form-group">
                 <label for="role">Job Role:</label>
                 <select class="form-control" id="role" required>
+                  <option selected disabled value="">Choose...</option>
                   <option value="full stack js developer">Full Stack Developer</option>
                   <option value="front end developer">Front End Developer</option>
                   <option value="back end developer">Back End Developer</option>
@@ -441,7 +443,8 @@
                   <label class="col-lg-12">Expiration Date:</label>
 
                   <div class="form-group col-lg-8">
-                    <select class="custom-select form-control" id="exp-month">
+                    <select class="custom-select form-control" id="exp-month" required>
+                      <option selected disabled value="">Month</option>
                       <option value="1">1 - January</option>
                       <option value="2">2 - February</option>
                       <option value="3">3 - March</option>
@@ -457,7 +460,8 @@
                     </select>
                   </div>
                   <div class="form-group col-lg">
-                    <select class="custom-select form-control" id="exp-year">
+                    <select class="custom-select form-control" id="exp-year" required>
+                      <option selected disabled value="">Year</option>
                       <option value="2016">2016</option>
                       <option value="2017">2017</option>
                       <option value="2018">2018</option>
@@ -489,13 +493,10 @@
 
 
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
         'use strict';
         window.addEventListener('load', function () {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
           var validation = Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
               if(form.checkValidity() === false) {
